@@ -168,3 +168,112 @@ int main()
  getch();
  return 0;
 }
+**************************************************************************************
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+#include<math.h>
+
+//MULTILEVEL INHERITENCE
+
+class Shape   // BASE CLASS - LEVEL 1
+{
+    public:
+    int width;
+    int height;
+  void setWidth(int w)
+  {
+   width = w;
+  }
+  void setHeight(int h)
+  {
+   height = h;
+  }
+  void display()
+  {
+   cout<<"LEVEL-1"<<endl;
+  }
+};
+//
+class Rectangle : public Shape // LEVEL - 2
+{
+   public:
+   int getArea()
+   {
+    return (width * height);
+   }
+   void display()
+  {
+   cout<<"LEVEL-2"<<endl;
+  }
+};
+
+class Diag :  public Rectangle // LEVEL - 3
+{
+   public:
+   void display()
+  {
+   cout<<"LEVEL-3"<<endl;
+  }
+} ;
+int main()
+{
+ clrscr();
+ //Rectangle rect;
+ //rect.setWidth(5);
+ //rect.setHeight(7);
+ //cout<< "Total Area: "<<rect.getArea() << endl;
+ Diag d;
+ d.setWidth(5);
+ d.setHeight(7);
+ cout<< "Total Area: "<<d.getArea() << endl;
+ d.display();
+ getch();
+ return 0;
+}
+***********************************************************************************
+#include<iostream.h>
+#include<conio.h>
+//MULTIPLE INHERITENCE   - DIMOND PROBLEM
+//                       A
+//                 B          C
+//                       D
+class A   //Base- Class
+{
+  public:
+  void display()
+  {
+    cout<<"A"<<endl;
+  }
+};
+class B  : public A  //LEVEL-1
+{
+  public:
+ void  display()
+  {
+    cout<<"B"<<endl;
+  }
+};
+class C : public A    //LEVEL-1
+{
+  public:
+  void display()
+  {
+    cout<<"C"<<endl;
+  }
+};
+class D : public B , public C  //LEVEL-2
+{
+  public:
+
+};
+//
+int main()
+{
+ D demo;
+ clrscr();
+ demo.display();
+ getch();
+ return 0;
+}
+*********************************************************************************************************
