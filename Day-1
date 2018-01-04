@@ -1,0 +1,60 @@
+DISPLAY FIRST 10 NUMBERS
+
+#include <iostream.h>
+#include <conio.h>
+
+int main()
+{
+ clrscr();
+ int i;
+ for(i = 0; i<11 ; i++)
+ {
+  cout<<i <<endl;
+ }
+  getch();
+ return 0;
+}
+***********************************************************************
+SWAP TWO NUMBERS
+
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+  int a=2;
+  int b = 3;
+  clrscr();
+  cout<<"Before swapping the numbers are: "<<endl;
+  cout<<"\n a="<<a;
+  cout<<"\n b="<<b;
+  a = a+b - (b=a);
+  cout<<"\n After swapping the numbers are :"<<endl;
+  cout<<"\n a="<<a;
+  cout<<"\n b="<<b;
+  getch();
+  return 0;
+}
+************************************************************************
+Using Structure in C++
+
+#include <iostream.h>
+#include <conio.h>
+#include <string.h>
+struct Fruit
+{
+ char name[10];
+ char color[10];
+}first;
+
+int main()
+{
+ 
+ clrscr();
+ strcpy(first.name , "Apple");
+ strcpy(first.color,"Red");
+ cout<<"Name:"<<first.name<<endl;
+ cout<<"Color:"<<first.color<<endl;
+ getch();
+ return 0;
+}
+*******************************************************************************
