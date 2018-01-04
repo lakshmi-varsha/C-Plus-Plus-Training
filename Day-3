@@ -31,10 +31,12 @@ class Employee
  }
 
 **********************************************************************************************
+VAIABLES ARE PRIVATE AND FUNCTIONS ARE PUBLIC
+
+
 #include<iostream.h>
 #include<conio.h>
 #include<string.h>
-//VAIABLES ARE PRIVATE AND FUNCTIONS ARE PUBLIC
 class Employee
 {
   private:
@@ -65,7 +67,9 @@ class Employee
   return 0;
  }
  **********************************************************************************************************************
- #include<iostream.h>
+PROGRAM USING CONSTRUCTORS WITH AND WITHOUT PARAMETERS AND USER-DEFINED FUNCTIONS
+
+#include<iostream.h>
 #include<conio.h>
 #include<string.h>
 
