@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+class A
+{
+  public:
+  void prnt(char *arr)
+  {
+      cout<<arr<<endl;
+  }
+};
+
+int main()
+{
+ char msg[] = "HELLO WORLD";
+ A demo;
+ demo.prnt(msg);
+}
